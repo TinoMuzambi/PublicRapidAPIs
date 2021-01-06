@@ -1,0 +1,16 @@
+{
+	"name": "Junk",
+	"version": "1.0.0",
+	"description": "",
+	"main": "API.js",
+	"scripts": {
+		"start": "node API.js"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.21.1",
+		"dotenv": "^8.2.0"
+	}
+}
