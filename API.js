@@ -1,6 +1,8 @@
 const axios = require("axios").default;
 const dotenv = require("dotenv").config();
 
+// My little daughter came to me all excited, saying "Daddy! Daddy! Guess how old I'll be in June!" "Oh I don't know princess, why don't you tell me?" I said. She gave me a huge smile and held up four fingers. It's now three hours later, police have joined in and she still won't say where she got them.
+
 // Random Joke API. https://rapidapi.com/LemmoTresto/api/joke3
 const joke = {
 	method: "GET",
@@ -115,8 +117,17 @@ const bot = {
 	},
 };
 
+// END OF RAPID-API
+
+// Joke API. https://sv443.net/jokeapi/v2/
+const joke2 = {
+	method: "GET",
+	url:
+		"https://v2.jokeapi.dev/joke/Any?blacklistFlags=religious,political,racist,sexist,explicit&type=single",
+};
+
 axios
-	.request(joke)
+	.request(joke2)
 	.then(function (response) {
 		console.log(response.data);
 	})
